@@ -1,7 +1,7 @@
 import cv2 as cv
 import numpy as np
 
-img= cv.imread('c:\\Users\\anush\\OneDrive\\Documents\\Codes\\OpenCV\\Photos\\image 0.jpeg')
+img= cv.imread('Photos\\image 0.jpeg')
 cv.imshow('Image', img)
 
 # averaging
@@ -21,3 +21,4 @@ bilateral = cv.bilateralFilter(img, 10, 35, 25)
 cv.imshow('Bilateral', bilateral)
 
 cv.waitKey(0)
+
