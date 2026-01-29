@@ -1,6 +1,6 @@
 import cv2 as cv
 
-img=cv.imread('c:\\Users\\anush\\OneDrive\\Documents\\Codes\\OpenCV\\Photos\\image 0.jpeg')
+img=cv.imread('Photos\\image 0.jpeg')
 cv.imshow('Image', img)
 
 # in thresholding, the pixels in the image are either 0 or 255. We take a threshold value, say x,
@@ -22,6 +22,7 @@ cv.imshow('Inverse Simple Threshold', thresh_inv)
 # here computer calculates the threshold value for each pixel based on the neighborhood of that pixel
 adaptive_thresh=cv.adaptiveThreshold(gray, 255, cv.ADAPTIVE_THRESH_GAUSSIAN_C, cv.THRESH_BINARY, 11, 9)
 cv.imshow('Adaptive Threshold', adaptive_thresh)
+
 
 
 
