@@ -1,6 +1,6 @@
 import cv2 as cv
 
-img=cv.imread('c:\\Users\\anush\\OneDrive\\Documents\\Codes\\OpenCV\\Photos\\car.jpeg')
+img=cv.imread('Photos\\car.jpeg')
 
 
 cv.imshow('Image',img)
@@ -35,4 +35,5 @@ cv.imshow('Resized', resized)
 
 crop=img[50:100, 200:400]
 cv.imshow('Cropped', crop)
+
 cv.waitKey(0)
