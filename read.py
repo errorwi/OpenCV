@@ -1,5 +1,5 @@
 import cv2 as cv
-img=cv.imread('c:\\Users\\anush\\OneDrive\\Documents\\Codes\\OpenCV\\Photos\\car.jpeg')
+img=cv.imread('Photos\\car.jpeg')
 # print(img)
 # cv.imshow('Image', img)
 
@@ -34,3 +34,4 @@ cv.destroyAllWindows()
 cv.waitKey(0)
 
 #def 
+
