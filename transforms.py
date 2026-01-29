@@ -1,7 +1,7 @@
 import cv2 as cv
 import numpy as np
 
-img=cv.imread('c:\\Users\\anush\\OneDrive\\Documents\\Codes\\OpenCV\\Photos\\car.jpeg')
+img=cv.imread('dir/path')
 cv.imshow('Image', img)
 #translation
 def translate(img, x, y):
@@ -41,5 +41,6 @@ cv.imshow('Flipped', flipped)
 #cropping
 cropped=img[200:400, 300:500]
 cv.imshow('Cropped', cropped)
+
 
 cv.waitKey(0)
