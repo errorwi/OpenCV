@@ -3,7 +3,7 @@ import numpy as np
 
 blank=np.zeros((500,500,3), dtype='uint8')
 # cv.imshow('Blank', blank)
-img=cv.imread('c:\\Users\\anush\\OneDrive\\Documents\\Codes\\OpenCV\\Photos\\car.jpeg')
+img=cv.imread('Photos\\car.jpeg')
 # cv.imshow('Image', img)
 
 blank[200:300, 300:700]=0,25,69
@@ -17,4 +17,5 @@ cv.imshow('Circle', blank)
 
 cv.putText(blank, 'Hey', (235,250), cv.FONT_HERSHEY_DUPLEX, 1.0, (255,255,255))
 cv.imshow('Text', blank)
+
 cv.waitKey(0)
