@@ -1,7 +1,7 @@
 import cv2 as cv
 import numpy as np
 
-img=cv.imread('c:\\Users\\anush\\OneDrive\\Documents\\Codes\\OpenCV\\Photos\\image 0.jpeg')
+img=cv.imread('Photos\\image 0.jpeg')
 # cv.imshow('Image', img)
 
 gray=cv.cvtColor(img, cv.COLOR_BGR2GRAY)
@@ -25,5 +25,6 @@ cv.imshow('Combined Sobel', combined)
 #canny
 canny=cv.Canny(gray, 150, 175)
 cv.imshow('Canny', canny)
+
 
 cv.waitKey(0)
