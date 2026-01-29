@@ -2,7 +2,7 @@ import cv2 as cv
 import matplotlib.pyplot as plt
 import numpy as np
 
-img= cv.imread('c:\\Users\\anush\\OneDrive\\Documents\\Codes\\OpenCV\\Photos\\car.jpeg')
+img= cv.imread('Photos\\car.jpeg')
 cv.imshow('Image', img)
 
 blank=np.zeros(img.shape[:2], dtype='uint8')
@@ -33,4 +33,5 @@ for i, col in enumerate(colors):
     plt.plot(hist, color=col)
     plt.xlim
 plt.show()
+
 cv.waitKey(0)
